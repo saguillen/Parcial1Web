@@ -94,6 +94,15 @@ function Login() {
                         </Form>
                     </div>
                 </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <FormattedMessage id="Contactanos"/>: +57 3102105253 - info@elaromamagico.com - @elaromamagico
+                    </a>
+                </nav>
             </div>
 
         );
