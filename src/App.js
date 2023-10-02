@@ -7,14 +7,20 @@ import Col from "react-bootstrap/Col";
 import Login from './components/login';
 import CafeList from './components/cafelist';
 import DetalleCafe from './components/detalleCafe';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 function App() {
   return (
 
     <React.StrictMode>
-    <Login></Login>
-    <CafeList></CafeList>
-    <DetalleCafe></DetalleCafe>
-  </React.StrictMode>
+      <Router>      
+        <Routes>
+          <Route path="/" element={<Login></Login>} />
+          <Route path="/cafes" element={<CafeList></CafeList>} />
+          <Route path="/cafe/:id" element={<DetalleCafe />} />
+        </Routes>
+      </Router>
+    </React.StrictMode>
   );
 }
 
